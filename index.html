@@ -7,8 +7,8 @@
     <title>Decision  Making</title>
 </head>
 <body>
-    <pre style="font-size:large ; color:greenyellow;">
-    Q.1 Calculator?
+    <pre style="font-size:large ; color:rgb(255, 47, 193);">
+    //Q.1 Calculator?
     Ans-const Calculator = (A, B, C) => 
     {
         switch(A){
@@ -26,7 +26,7 @@
         }
         
     };
-    Q.2 Check Whether the conditionis fulfilled or not?
+    //Q.2 Check Whether the conditionis fulfilled or not?
     Ans-const Check_divisibility = (N) => {
         if (N%6 === 0 && N%9 === 0){
           return "Divisible by both";
@@ -36,7 +36,7 @@
      
          
      };
-     Q.3 Eligible Voter?
+    // Q.3 Eligible Voter?
      Ans-const isEligible = (a) => {
         if(a>=18){
           return "Eligible for voting";
@@ -46,19 +46,23 @@
         
     };
     
-     Q.4 Find Relation?
-     Ans-const findRelation = (x,y) => {
-         if(x<y){
-          return x + "is smaller than" + y;
+    //Q.4 Find Relation?
+    Ans- const findRelation = (x,y) => {
+        if (x>y){
+          return x + " is greater than " + y;
         }
-        else if(x>y){
-          return x + "is greater than" + y;
+        else if(x<y){
+          return x + " is smaller than " + y;
         }
         else
-          return x + "is equal to" + y;
+        return x + " is equal to " + y;
+      };
+    
+    
+    
         
-    }; -->
-    Q.5Get Value?
+     
+    //Q.5 Get Value?
     Ans-const getValue = (a) => {
         switch(true) {
           case(a=="P"|| a=="p"):
@@ -71,8 +75,8 @@
             return("Data Structure");
         }
     };
-    Q.6 Find the maximum out of three numbers?
-    //Ans-const Max_out_of_three = (A,B,C) => {
+    //Q.6 Find the maximum out of three numbers?
+    Ans-const Max_out_of_three = (A,B,C) => {
         if (A>B && A>C){
           return A;
         }
@@ -118,31 +122,29 @@
     };
     
     Q.8 Check weather the triangle is Acute or Obtuse?
-     Ans- if (A<90 && B < 90 && C < 90){
-        return "acute";
-      }  
-      else
-      return "obtuse";
-  
-    };  
+     Ans- const Triangle_Check = (A,B,C) => {
+        if (A < 90 && B < 90 && C < 90){
+          return "acute";
+        }  
+        else
+        return "obtuse";
+    
+      };
      Q.9 Get Value?
-     Ans-const findGrades = (a) => {
-        if (a<10){
-              return "E"
+     Ans- const getValue = (a) => {
+        if (a == "P" || a == "p"){
+          return "PrepBytes";
         }
-        else if(a>11 && a<20){
-          return "D"
+        else if (a == "Z" || a == "z"){
+          return "Zenith";
         }
-        else if(a>21 && a<30){
-          return "C"
+        else if (a == "E" || a == "e"){
+          return "Expert Coder";
         }
-        else if(a>31 && a<40){
-          return "B"
-        }
-        else if (a>41 && a<50){
-          return "A"
-        }
-     };
+        else 
+          return "Data Structure";
+      };
+    
     </pre>
     
  </body>
