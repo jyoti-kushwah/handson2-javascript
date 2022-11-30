@@ -48,8 +48,8 @@
     
      Q.4 Find Relation?
      Ans-const findRelation = (x,y) => {
-        if(x<y){
-          return x + " is smaller than" + y;
+         if(x<y){
+          return x + "is smaller than" + y;
         }
         else if(x>y){
           return x + "is greater than" + y;
@@ -57,7 +57,7 @@
         else
           return x + "is equal to" + y;
         
-    };
+    }; -->
     Q.5Get Value?
     Ans-const getValue = (a) => {
         switch(true) {
@@ -72,7 +72,7 @@
         }
     };
     Q.6 Find the maximum out of three numbers?
-    Ans-const Max_out_of_three = (A,B,C) => {
+    //Ans-const Max_out_of_three = (A,B,C) => {
         if (A>B && A>C){
           return A;
         }
@@ -87,7 +87,7 @@
       
       };
     Q.7 second smallest?
-    Ans- const findSndSmallest = (x,y,z) => {
+   // Ans- const findSndSmallest = (x,y,z) => {
         if (x > y && x > z){
           if (y > z){
             return y;
@@ -99,7 +99,13 @@
           if (x > z){
           return x;
           }
+          else                                                           
+            return "acute";
+          }  
           else
+          return "obtuse";
+      
+        };  -->
           return z;
         }
         if (z > x && z > y){
@@ -112,17 +118,17 @@
     };
     
     Q.8 Check weather the triangle is Acute or Obtuse?
-    Ans- if (A<90 && B < 90 && C < 90){
+     Ans- if (A<90 && B < 90 && C < 90){
         return "acute";
       }  
       else
       return "obtuse";
   
-    };
-    Q.9 Get Value?
-    Ans-const findGrades = (a) => {
+    };  
+     Q.9 Get Value?
+     Ans-const findGrades = (a) => {
         if (a<10){
-          return "E"
+              return "E"
         }
         else if(a>11 && a<20){
           return "D"
